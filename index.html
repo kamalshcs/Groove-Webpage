@@ -1,50 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head>
-	
-	<title>index</title>
- 
-<style>
-	
-.head
-{
-	color:#003660;
-	background-color:#ffca18;	
-}
+<title>index</title>
 
-.grid-container 
-{
- 	display: grid;
- 	grid-template-columns:10% 10% 10% 10%;
-}
-
-.grid-item 
-{
-
-  	padding:5px;
-  	font-size: 20px;
-  	text-align: center;
-}
-
-.nav
-{
-background-color:#0ba89a;
-}
-
-
-.body
-{
-
-}
-
-button
-{
-	text-align: center;
-	background-color:#0ba89a; 
-}
-
-
-</style>
 
 <!-- Latest compiled and minified CSS -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
@@ -55,121 +13,120 @@ button
 <!-- Latest compiled and minified JavaScript -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 	
-
 <script type="text/javascript">
-	
-	function PlaySound1() {
+  
+  function PlaySound1() {
     var thissound=document.getElementById('j');
     thissound.play();
-	}
+  }
 
-	function StopSound1() {
+  function StopSound1() {
     var thissound=document.getElementById('j');
     thissound.pause();
-	}
+  }
 
-	
-	function PlaySound2() {
+  
+  function PlaySound2() {
     var thissound=document.getElementById('p');
     thissound.play();
-	}
+  }
 
-	function StopSound2() {
+  function StopSound2() {
     var thissound=document.getElementById('p');
     thissound.pause();
-	}
+  }
 
-	function PlaySound3() {
+  function PlaySound3() {
     var thissound=document.getElementById('i');
     thissound.play();
-	}
+  }
 
-	function StopSound3() {
+  function StopSound3() {
     var thissound=document.getElementById('i');
     thissound.pause();
-	}
+  }
 
 </script>
 
 
 
 </head>
+<body style="background-color: mintcream;">
 
-<body>
 
-<div class="head">
-	<div class="container-fluid">
-		<div class="col-xs-12">
-		<img src="font.png" style="height:80%; width:30%;margin-left:310px;"></img>
-		
-		<img src="groove.jpg" alt="logo" style="height:14%; width:14%;"></img>
-		
-		</div>
- 
-	</div>
+<div class="header" style="background-size:cover;">
+<div class="container-fluid" style="background-size:cover;background-color: teal;">
+
+<div class="text-center">
+<p style="font-family: copperplate gothic;color:white;font-size: 430%;"> groove </p> 
+</div>
+</div>
 </div>
 
-<div class="nav">
-    		 <div class=" grid-container" id="bs-example-navbar-collapse-1">
-      			
-      			<div class="grid-item" style="color:#febc11;font-weight: bolder;font-size:30px;border-right:2px solid #febc11">
-					Sway
-				</div>
-				<div class="grid-item 2" style="color:#febc11;padding-top: 12px">
-					Genre
-				</div>
-				<div class="grid-item 3" style="color:#febc11;padding-top: 12px">
-					Albums
-				</div>
-				<div class="grid-item 4" style="color:#febc11;padding-top: 12px">
-					Artists
-				</div>
-			</div>	
+
+
+<nav class="navbar">
+  <div class="container-fluid">
+    <div class="navbar-header">
+    <a class="navbar-brand" href="project.html" style="font-family:copperplate gothic; background-color:deepskyblue; color:mintcream; font-size:150%">groove</a>
+    </div>
+   
+      <ul class="nav navbar-nav">
+        <li><a href="artist.html" style="font-family:courier new; color:deepskyblue; font-size:150%">artists</a></li>
+        <li><a href="remixes.html" style="font-family:courier new; color:deepskyblue; font-size:150%">remixes</a></li>
+        <li><a href="mashups.html" style="font-family:courier new; color:deepskyblue; font-size:150%">mashups</a></li>
+        
+      </ul>
+      <form class="navbar-form navbar-right">
+      <input type="text" class="form-control" placeholder="search music" style="font-family:courier new; color:deepskyblue; font-size:150%" >
+      <button type="submit" class="btn btn-default" style="font-family:courier new; color:deepskyblue; font-size:150%; padding-top:0px;padding-bottom:0px;">search</button>
+      </form>
+     
+    </div>
+</nav>
+
+
+<div class="text-center">
+<p style="font-family:century gothic;font-size: 200%;color:mintcream;background-color:darkslategrey;">
+Trending</p>
 </div>
-<br><br><br>
 
+<br>
+<br>
 
-
-<div class="body">
-	<br><br><br>
-<div class="container">
-		<div class="row">
-
-			<div class="col-sm-3 " style="background-color:#003660;padding:100px;text-align: center; border-radius: 30px; border-bottom:25px solid #0ba89a;margin-left: 48px ">
-				
-				<button class="btn" onclick="PlaySound1('j')"
-				        			ondblclick="StopSound1('j')"
-				        			style="color:#febc11;font-size:30px">Jazz</button>
-				<audio id='j' src="wanted.mp3"></audio>
-			
-			</div>
-		
-			<div class="col-sm-offset-1 col-sm-3" style="background-color:#003660;padding:100px;text-align: center; border-radius: 30px; border-bottom:25px solid #0ba89a; ">
-				
-				<button class="btn" onclick="PlaySound2('p')"
-				        			ondblclick="StopSound2('p')"
-				                    style="color:#febc11;font-size:30px">Pop</button>
-				<audio id='p' src="vacancy.mp3"></audio>
-
-			</div>
-			
-			<div class="col-sm-offset-1 col-sm-3" style="background-color:#003660;padding:100px;text-align:center; border-radius: 30px; border-bottom:25px solid #0ba89a;">
-
-				<button class="btn" onclick="PlaySound3('i')"
-				        			ondblclick="StopSound3('i')"
-				        			style="color:#febc11;font-size:30px;margin-left:-40px">Instrumental</button>
-				<audio id='i' src="coco.mp3"></audio>
-			
-			</div>
-	</div>
+<div class="container-fluid">
+<div class="col-sm-5 col-sm-7-offset">
+<p style="background-color: cadetblue;color:white;font-size: 150%;">Vacancy - Onerepublic</p>
+                    <button class="btn" onclick="PlaySound2('p')"
+                    ondblclick="StopSound2('p')"
+                    style="color:darkslategrey;font-size:150%;background-color: cadetblue;border-radius: 20px">Play/Stop</button>
+                    <audio id='p' src="vacancy.mp3"></audio>
 </div>
-<br><br><br>
+</div>
+<br>
+<br>
 
-<div class="container" style="background-color:#003660;border-radius: 20px">
-	<div class="col-sm-offset-2 col-sm-8 col-sm-offset-2"><br>
-		<p style="font-size: 30px;color:white;"> Try listening to the songs by clicking on any button above!<br>
-		To stop the playing song, double click on the button. </p>
-	</div>
+
+<div class="container-fluid">
+<div class="col-sm-5 col-sm-7-offset">
+<p style="background-color: cadetblue;color:white;font-size: 150%;">Coco-Disney(Soundtrack)</p>
+<button class="btn" onclick="PlaySound3('i')"
+                    ondblclick="StopSound3('i')"
+                    style="color:darkslategrey;font-size:150%;background-color: cadetblue;border-radius: 20px">Play/Stop</button>
+                    <audio id='i' src="coco.mp3"></audio>
+</div>
+</div>
+<br>
+<br>
+
+<div class="container-fluid">
+<div class="col-sm-5 col-sm-7-offset">
+<p style="background-color: cadetblue;color:white;font-size: 150%;">Glad You Came - The Wanted</p>
+  <button class="btn" onclick="PlaySound1('j')"
+                      ondblclick="StopSound1('j')"
+                       style="color:darkslategrey;font-size:150%;background-color: cadetblue;border-radius: 20px">Play/Stop</button>
+                      <audio id='j' src="wanted.mp3"></audio>
+</div>
 </div>
 <br>
 <br>
